@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#050505;
+    color:white;
+}
+
+.menu{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:80px;
+    background:#0a0a0a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    border-bottom:1px solid #222;
+    z-index:1000;
+}
+
+.logo img{
+    width:170px;
+}
+
+.links{
+    display:flex;
+    gap:25px;
+}
+
+.links a{
+    color:#ffb000;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.links a:hover{
+    color:white;
+}
+
+.banner{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.banner h1{
+    font-size:90px;
+    color:#ffb000;
+}
+
+.banner p{
+    font-size:28px;
+    margin-top:15px;
+}
+
+.btn-banner{
+    margin-top:30px;
+    background:#ffb000;
+    color:black;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn-banner:hover{
+    background:#ffd04d;
+}
+
+h1{
+    text-align:center;
+    color:#ffb000;
+    margin-top:40px;
+}
+
+.produtos{
+    max-width:1300px;
+    margin:auto;
+    padding:40px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:280px;
+    background:#111;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    border:1px solid #222;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#ffb000;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h2{
+    color:#ffb000;
+    margin-top:15px;
+}
+
+.card h3{
+    color:#ffb000;
+    margin:15px 0;
+}
+
+.botao{
+    width:100%;
+    border:none;
+    padding:12px;
+    background:#ffb000;
+    color:black;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.botao:hover{
+    background:#ffd04d;
+}
+
+.sobre{
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+    padding:20px;
+}
+
+.sobre p{
+    font-size:22px;
+    line-height:35px;
+}
+
+.formulario{
+    width:450px;
+    background:#111;
+    margin:120px auto;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #222;
+}
+
+.formulario h1{
+    margin-bottom:20px;
+}
+
+.formulario input,
+.formulario select{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+}
+
+.card2{
+    width:1000px;
+    max-width:95%;
+    background:#111;
+    margin:120px auto 30px;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #222;
+}
+
+.card2 img{
+    border-radius:10px;
+}
+
+.sucesso{
+    width:900px;
+    max-width:95%;
+    margin:120px auto;
+    background:#111;
+    border-radius:15px;
+    border:1px solid #222;
+    padding:40px;
+}
+
+.infossucesso{
+    text-align:center;
+}
+
+.infossucesso h1{
+    margin-bottom:20px;
+}
+
+.rodape{
+    background:#0a0a0a;
+    margin-top:80px;
+    border-top:1px solid #222;
+}
+
+.rodape-conteudo{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.rodape-logo img{
+    width:90px;
+}
+
+.rodape-logo p{
+    margin-top:5px;
+    color:#ccc;
+    font-size:13px;
+}
+
+.rodape h3{
+    color:#ffb000;
+    margin-bottom:10px;
+}
+
+.rodape-contato p{
+    margin:3px 0;
+    color:#ccc;
+    font-size:14px;
+}
+
+.rodape-copy{
+    text-align:center;
+    color:#777;
+    font-size:12px;
+    padding:10px;
+    border-top:1px solid #1a1a1a;
+}
+
+/* PAGAMENTO CARTÃO */
+
+#cartao{
+    background:#111;
+    border:1px solid #333;
+    border-radius:12px;
+    padding:25px;
+    margin-top:20px;
+}
+
+#cartao h3{
+    color:#ffb000;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+#cartao input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    background:#1a1a1a;
+    border:1px solid #333;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+    box-sizing:border-box;
+    transition:0.3s;
+}
+
+#cartao input:focus{
+    outline:none;
+    border-color:#ffb000;
+    box-shadow:0 0 8px rgba(255,176,0,0.4);
+}
+
+#pagamento{
+    width:100%;
+    padding:14px;
+    background:#1a1a1a;
+    border:1px solid #333;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+}
+
+#pix,
+#dinheiro{
+    background:#111;
+    border:1px solid #333;
+    border-radius:12px;
+    padding:20px;
+    margin-top:20px;
+    text-align:center;
+}
+
+#pix h3,
+#dinheiro h3{
+    color:#ffb000;
+}
+
+#pix img{
+    margin:15px 0;
+    border-radius:10px;
+    background:white;
+    padding:10px;
+}
+
+.campo-qtd{
+
+    width:100px;
+    height:40px;
+
+    text-align:center;
+
+    background:#111;
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+}
+
+@media(max-width:768px){
+
+.menu{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+}
+
+.links{
+    margin-top:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.banner h1{
+    font-size:50px;
+}
+
+.banner p{
+    font-size:20px;
+}
+
+.formulario{
+    width:95%;
+}
+
+}
